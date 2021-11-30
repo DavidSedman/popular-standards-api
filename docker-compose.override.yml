@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+      target: setup
+    command: ["npm", "run", "development"]
+    volumes:
+      - ./src/:/app 

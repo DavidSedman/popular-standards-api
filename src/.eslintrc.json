@@ -1,0 +1,43 @@
+{
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "ignorePatterns": [
+      "__dist/",
+      "**/node_modules/**/*.js",
+      "__tests/coverage/",
+      "__tests/report/",
+      "__migrations"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": "2020",
+      "sourceType": "module"
+    },
+    "plugins": ["jest", "@typescript-eslint", "prettier"],
+    "root": true,
+    "rules": {
+      "semi": "off",
+      "indent": "off",
+      "max-len": "off",
+      "comma-dangle": "off",
+      "no-tabs": "off",
+      "quote-props": "off",
+      "object-curly-spacing": "off",
+      "linebreak-style": "off",
+      "operator-linebreak": "off",
+      "require-jsdoc": "off",
+      "no-unused-vars": "off",
+      "new-cap": "off",
+      "@typescript-eslint/no-unused-vars": ["off"],
+      "@typescript-eslint/ban-ts-comment": "off" // using single line comments is allowed in the ts docs: https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html#ts-check
+    }
+  }
+  
